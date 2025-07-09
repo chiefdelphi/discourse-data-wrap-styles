@@ -1,3 +1,271 @@
-[data-wrap="pink"] {
-    background: pink; 
+/* ==========================================================================
+    Border Utilities
+    ========================================================================== */
+
+/* Add a 1px solid border using the primary-low-mid color */
+[data-wrap~="border"] {
+  border: 1px solid var(--primary-low-mid);
+}
+
+/* Add a small border radius for rounded corners */
+[data-wrap~="rounded"] {
+  border-radius: 0.25rem;
+}
+
+/* Remove all borders */
+[data-wrap~="border-none"] {
+  border: none;
+}
+
+/* Remove border from specific sides */
+[data-wrap~="border-t-none"] {
+  border-top: none;
+}
+[data-wrap~="border-r-none"] {
+  border-right: none;
+}
+[data-wrap~="border-b-none"] {
+  border-bottom: none;
+}
+[data-wrap~="border-l-none"] {
+  border-left: none;
+}
+
+/* Set a thicker border width (4px) on all or specific sides */
+[data-wrap~="border-4"] {
+  border-width: 4px;
+}
+[data-wrap~="border-t-4"] {
+  border-top-width: 4px;
+}
+[data-wrap~="border-r-4"] {
+  border-right-width: 4px;
+}
+[data-wrap~="border-b-4"] {
+  border-bottom-width: 4px;
+}
+[data-wrap~="border-l-4"] {
+  border-left-width: 4px;
+}
+
+/* Border Color Utilities
+    Use semantic color variables for border colors on all or specific sides */
+[data-wrap~="border-accent"] {
+  border-color: var(--tertiary);
+}
+[data-wrap~="border-t-accent"] {
+  border-top-color: var(--tertiary);
+}
+[data-wrap~="border-r-accent"] {
+  border-right-color: var(--tertiary);
+}
+[data-wrap~="border-b-accent"] {
+  border-bottom-color: var(--tertiary);
+}
+[data-wrap~="border-l-accent"] {
+  border-left-color: var(--tertiary);
+}
+
+[data-wrap~="border-quaternary"] {
+  border-color: var(--quaternary);
+}
+[data-wrap~="border-t-quaternary"] {
+  border-top-color: var(--quaternary);
+}
+[data-wrap~="border-r-quaternary"] {
+  border-right-color: var(--quaternary);
+}
+[data-wrap~="border-b-quaternary"] {
+  border-bottom-color: var(--quaternary);
+}
+[data-wrap~="border-l-quaternary"] {
+  border-left-color: var(--quaternary);
+}
+
+[data-wrap~="border-success"] {
+  border-color: var(--success);
+}
+[data-wrap~="border-t-success"] {
+  border-top-color: var(--success);
+}
+[data-wrap~="border-r-success"] {
+  border-right-color: var(--success);
+}
+[data-wrap~="border-b-success"] {
+  border-bottom-color: var(--success);
+}
+[data-wrap~="border-l-success"] {
+  border-left-color: var(--success);
+}
+
+/* ==========================================================================
+    Flexbox Utilities
+    ========================================================================== */
+
+/* Set display type */
+[data-wrap~="d-block"] {
+  display: block;
+}
+[data-wrap~="d-flex"] {
+  display: flex;
+}
+
+/* Flex direction */
+[data-wrap~="flex-row"] {
+  flex-direction: row;
+}
+[data-wrap~="flex-col"] {
+  flex-direction: column;
+}
+
+/* Justify content along the main axis */
+[data-wrap~="justify-start"] {
+  justify-content: flex-start;
+}
+[data-wrap~="justify-center"] {
+  justify-content: center;
+}
+[data-wrap~="justify-between"] {
+  justify-content: space-between;
+}
+[data-wrap~="justify-end"] {
+  justify-content: flex-end;
+}
+
+/* Align items along the cross axis */
+[data-wrap~="items-start"] {
+  align-items: flex-start;
+}
+[data-wrap~="items-center"] {
+  align-items: center;
+}
+[data-wrap~="items-end"] {
+  align-items: flex-end;
+}
+[data-wrap~="items-stretch"] {
+  align-items: stretch;
+}
+
+/* ==========================================================================
+    Spacing Utilities (Padding & Margin)
+    ========================================================================== */
+
+/* Padding (all sides) */
+[data-wrap~="p-0"] { padding: 0; }
+[data-wrap~="p-1"] { padding: 0.25rem; }
+[data-wrap~="p-2"] { padding: 0.5rem; }
+
+/* Margin (all sides) */
+[data-wrap~="m-0"] { margin: 0; }
+[data-wrap~="m-1"] { margin: 0.25rem; }
+[data-wrap~="m-2"] { margin: 0.5rem; }
+
+/* Padding - individual sides */
+[data-wrap~="pt-0"] { padding-top: 0; }
+[data-wrap~="pt-1"] { padding-top: 0.25rem; }
+[data-wrap~="pt-2"] { padding-top: 0.5rem; }
+
+[data-wrap~="pr-0"] { padding-right: 0; }
+[data-wrap~="pr-1"] { padding-right: 0.25rem; }
+[data-wrap~="pr-2"] { padding-right: 0.5rem; }
+
+[data-wrap~="pb-0"] { padding-bottom: 0; }
+[data-wrap~="pb-1"] { padding-bottom: 0.25rem; }
+[data-wrap~="pb-2"] { padding-bottom: 0.5rem; }
+
+[data-wrap~="pl-0"] { padding-left: 0; }
+[data-wrap~="pl-1"] { padding-left: 0.25rem; }
+[data-wrap~="pl-2"] { padding-left: 0.5rem; }
+[data-wrap~="pl-3"] { padding-left: 1rem; }
+
+/* Margin - individual sides */
+[data-wrap~="mt-0"] { margin-top: 0; }
+[data-wrap~="mt-1"] { margin-top: 0.25rem; }
+[data-wrap~="mt-2"] { margin-top: 0.5rem; }
+
+[data-wrap~="mr-0"] { margin-right: 0; }
+[data-wrap~="mr-1"] { margin-right: 0.25rem; }
+[data-wrap~="mr-2"] { margin-right: 0.5rem; }
+
+[data-wrap~="mb-0"] { margin-bottom: 0; }
+[data-wrap~="mb-1"] { margin-bottom: 0.25rem; }
+[data-wrap~="mb-2"] { margin-bottom: 0.5rem; }
+
+[data-wrap~="ml-0"] { margin-left: 0; }
+[data-wrap~="ml-1"] { margin-left: 0.25rem; }
+[data-wrap~="ml-2"] { margin-left: 0.5rem; }
+
+/* Padding - horizontal and vertical */
+[data-wrap~="px-0"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+[data-wrap~="px-1"] {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+[data-wrap~="px-2"] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+[data-wrap~="py-0"] {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+[data-wrap~="py-1"] {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+[data-wrap~="py-2"] {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Margin - horizontal and vertical */
+[data-wrap~="mx-0"] {
+  margin-left: 0;
+  margin-right: 0;
+}
+[data-wrap~="mx-1"] {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+[data-wrap~="mx-2"] {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+[data-wrap~="my-0"] {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+[data-wrap~="my-1"] {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+[data-wrap~="my-2"] {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+    Responsive Embeds
+    ========================================================================== */
+
+/* Make iframes and videos responsive with a 16:9 aspect ratio */
+[data-wrap~="embed-responsive"] {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+[data-wrap~="embed-responsive"] > iframe,
+[data-wrap~="embed-responsive"] > video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
